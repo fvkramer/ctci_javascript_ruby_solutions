@@ -32,19 +32,20 @@ const checkPerm = (strOne, strTwo) => {
 // Problem 3
 // replace all spaces in a string with '%20'
 const URLify = (str, length) => {
-  for (let i = 0; i < str.length; i++) {
-    if (str[i] === ' ') {
+  const splitStr = str.split('');
+  for (let i = 0; i < splitStr.length; i++) {
+    if (splitStr[i] === ' ') {
       // debugger;
-      str[i] = '%20';
+      splitStr[i] = '%20';
     }
   }
 
-  return str;
+  return splitStr.join('');
 };
 
-console.log(URLify('Mr John Smith'));
+// console.log(URLify('Mr John Smith'));
 
-const palindromCheck = (string) => {
+const palindromeCheck = (string) => {
 
 };
 
